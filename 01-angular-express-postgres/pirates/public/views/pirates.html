@@ -1,3 +1,16 @@
 <h1>Pirates</h1>
 
-{{aPirateSays}}
+<div class="well" ng-repeat='pirate in pirates'>
+  <p>
+    <img ng-src='{{pirate.image_url}}'>
+  </p>
+  <p>
+    {{pirate.name}}
+  </p>
+  <p>
+    {{pirate.poison}}
+  </p>
+  <p>
+    {{pirate.accessory}}
+  </p>
+</div>
